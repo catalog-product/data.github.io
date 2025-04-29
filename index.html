@@ -50,7 +50,7 @@
 			</div>
 			<ul class="nav nav-tabs">
 				<li class="nav-item">
-					<a class="nav-link active" href="#image-container-new">New</a>
+					<a class="nav-link active" href="#image-container-new">Baru</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#image-container-frozen-food">Frozen Food</a>
@@ -112,6 +112,7 @@
 				if (!container) return;
 
 				const fragment = document.createDocumentFragment();
+				const prefix = altPrefix === "Produk Baru" ? "new-" : "";
 
 				for (let i = 1; i <= totalImages; i++) {
 					const col = document.createElement('div');
@@ -126,7 +127,7 @@
 								data-gallery="${altPrefix}"
 								data-title=""
 								data-description="">
-							<img src="${imagePath}${i}.jpg"
+							<img src="${imagePath}${prefix}${i}.jpg"
 								class="mt-50 radius10 img-fluid"
 								alt="${altPrefix} ${i}">
 							</a>
@@ -138,11 +139,11 @@
 				container.appendChild(fragment);
 			}
 
-			renderImages('image-container-new', 22, 'img/New/', 'Baru');
-			renderImages('image-container-frozen-food', 163, 'img/Frozenfood/', 'Produk Frozen Food');
-			renderImages('image-container-snack', 48, 'img/Snack/', 'Produk Snack');
+			renderImages('image-container-new', 90, 'img/New/', 'Produk Baru');
+			renderImages('image-container-frozen-food', 174, 'img/Frozenfood/', 'Produk Frozen Food');
+			renderImages('image-container-snack', 50, 'img/Snack/', 'Produk Snack');
 			renderImages('image-container-bumbu-dapur', 21, 'img/Bumbu/', 'Produk Bumbu Dapur');
-			renderImages('image-container-barang', 22, 'img/Barang/', 'Produk Barang');
+			renderImages('image-container-barang', 29, 'img/Barang/', 'Produk Barang');
 			const glightbox = GLightbox({
 				selector: '.glightbox'
 			});
