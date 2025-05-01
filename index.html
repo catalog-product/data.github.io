@@ -171,7 +171,7 @@
 				$(`${activeNavLink} > div`).each(function () {
 					$(this).attr('class', 'col-6 col-md-4 col-sm-6');
 				});
-				$(`${activeNavLink} > div > a > img`).slice(0, 2).addClass('mt-10').removeClass('mt-10 mt-50');
+				$(`${activeNavLink} > div > a > img`).slice(0, 2).addClass('mt-10').removeClass('mt-50');
 				AOS.refreshHard();
 			});
 
@@ -182,7 +182,8 @@
 				$(`${activeNavLink} > div`).each(function () {
 					$(this).attr('class', 'col-12 col-md-4 col-sm-6');
 				});
-				$(`${activeNavLink} > div > a > img`).slice(0, 1).addClass('mt-10').removeClass('mt-10 mt-50');
+				$(`${activeNavLink} > div > a > img`).slice(0, 1).addClass('mt-10').removeClass('mt-50');
+				$(`${activeNavLink} > div > a > img`).slice(1, 2).addClass('mt-50').removeClass('mt-10');
 				AOS.refreshHard();
 			});
 		});
