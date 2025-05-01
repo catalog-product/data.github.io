@@ -135,7 +135,7 @@
 					col.setAttribute('data-aos-duration', '600');
 					col.setAttribute('data-aos', 'fade-down');
 					col.setAttribute('data-aos-delay', '0');
-					margin = i === 1 ? 'mt-10' : 'mt-50';
+					margin = (i === 1 && $(window).width() < 576) ? 'mt-10' : 'mt-50';
 
 					col.innerHTML = `
 							<a href="${imagePath}${prefix}${i}.jpg"
