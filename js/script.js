@@ -85,10 +85,10 @@ $(document).ready(function(){
 	}
 
 	renderImages('image-container-new', 27, 'img/New/', 'Produk Baru');
-	renderImages('image-container-frozen-food', 174, 'img/Frozenfood/', 'Produk Frozen Food');
-	renderImages('image-container-snack', 50, 'img/Snack/', 'Produk Snack');
+	renderImages('image-container-frozen-food', 218, 'img/Frozenfood/', 'Produk Frozen Food');
+	renderImages('image-container-snack', 95, 'img/Snack/', 'Produk Snack');
 	renderImages('image-container-bumbu-dapur', 21, 'img/Bumbu/', 'Produk Bumbu Dapur');
-	renderImages('image-container-barang', 28, 'img/Barang/', 'Produk Barang');
+	renderImages('image-container-barang', 29, 'img/Barang/', 'Produk Barang');
 	const glightbox = GLightbox({
 		selector: '.glightbox'
 	});
