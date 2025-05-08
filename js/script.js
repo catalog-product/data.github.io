@@ -55,7 +55,7 @@ $(document).ready(function(){
 		if (!container) return;
 
 		const fragment = document.createDocumentFragment();
-		const prefix = altPrefix === "Produk Baru" ? "new-" : "";
+		const prefix = altPrefix === "Produk Baru" ? "product-new-" : "";
 
 		let margin = "";
 		for (let i = 1; i <= totalImages; i++) {
