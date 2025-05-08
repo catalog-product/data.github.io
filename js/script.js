@@ -84,7 +84,7 @@ $(document).ready(function(){
 		container.appendChild(fragment);
 	}
 
-	renderImages('image-container-new', 90, 'img/New/', 'Produk Baru');
+	renderImages('image-container-new', 27, 'img/New/', 'Produk Baru');
 	renderImages('image-container-frozen-food', 174, 'img/Frozenfood/', 'Produk Frozen Food');
 	renderImages('image-container-snack', 50, 'img/Snack/', 'Produk Snack');
 	renderImages('image-container-bumbu-dapur', 21, 'img/Bumbu/', 'Produk Bumbu Dapur');
